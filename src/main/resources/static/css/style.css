@@ -1,0 +1,99 @@
+.text-title h1 {
+	color: #fff;
+	font-size: 3rem;
+	margin-top: 2rem;
+}
+
+.text-footer h3 {
+	position: fixed;
+	bottom: 2rem;
+	color: #fff;
+	left: 0;
+	right: 0;
+}
+
+.alr {
+	text-align: right;
+}
+
+.addinfo .form-group {
+	margin-bottom: 1rem;
+	padding: 0.75rem 1vw;
+}
+
+.addinfo .form-group input[type=text] {
+	background-color: #fff;
+	background-image: none;
+	border-radius: 4px;
+	border: 1px solid #dcdfe6;
+	box-sizing: border-box;
+	color: #606266;
+	display: inline-block;
+	font-size: inherit;
+	height: 40px;
+	line-height: 40px;
+	outline: none;
+	padding: 0 15px;
+	transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+	width: 100%;
+}
+
+.addinfo .form-group input[type=submit] {
+	padding: 0.25rem;
+}
+
+.tblist-h {
+	width: 84vw;
+	display: block;
+}
+
+.tblist-h th {
+	text-align: center;
+	width: 5%;
+	color: #4e73df;
+	font-size: 1.2rem;
+}
+
+.tblist-h td {
+	width: 21vw;
+	text-align: center;
+	color: #5a5c69;
+}
+
+.searchbar-l {
+	font-size: 1.25rem;
+}
+
+.searchbar-r {
+	float: right;
+}
+
+.card-title-h {
+	line-height: 2.4rem;
+}
+
+.card-body-of {
+	overflow-x: auto;
+	overflow-y: auto;
+	max-height: 72vh;
+}
+
+.setting-card {
+	margin: 2rem 0;
+	height: 34vh;
+}
+
+.big-font {
+	font-size: 2rem;
+}
+
+.about p {
+	width: 100%;
+}
+
+
+@media only screen and (max-width: 470px) {
+	.sm-font {
+		font-size: 1rem;
+	}
+}
