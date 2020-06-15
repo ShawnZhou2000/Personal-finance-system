@@ -5,7 +5,7 @@
 }
 
 .text-footer h3 {
-	position: fixed;
+	position: absolute;
 	bottom: 2rem;
 	color: #fff;
 	left: 0;
@@ -95,5 +95,14 @@
 @media only screen and (max-width: 470px) {
 	.sm-font {
 		font-size: 1rem;
+	}
+	.text-footer h3 {
+		font-size: 1rem;
+	}
+	.text-title h1 {
+		margin: 1rem 0;
+	}
+	.card {
+		margin-top: 1rem!important;
 	}
 }

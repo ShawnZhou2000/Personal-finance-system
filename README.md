@@ -24,6 +24,10 @@ git clone https://github.com/ShawnZhou2000/Personal-finance-system.git
 项目成功启动后，在浏览器内输入localhost:8090/toLogin即可进入登录界面。
 ```
 
+或在线预览此项目：
+
+[http://175.24.33.12:8090/toLogin](http://175.24.33.12:8090/toLogin)
+
 ## 开发环境
 
 SpringBoot 2.2.5 release
@@ -50,7 +54,10 @@ BootStrap 4
 
 操作系统：Microsoft Windows 10 Home Version 1909
 
-测试浏览器：Google Chrome 83.0.4103.97
+测试浏览器：
+
+- PC：Google Chrome 83.0.4103.97
+- 手机端：Via 4.1.0
 
 ## 项目简介
 

@@ -44,7 +44,7 @@
 											<h1 class="h1 text-gray-900 mb-4">欢迎回来！</h1>
 										</div>
 										<div>
-											<h1 class="h4 text-gray-900 mb-4">
+											<h1 class="h4 text-gray-900 mb-4 sm-font">
 												我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗。
 											</h1>
 										</div>
@@ -62,6 +62,8 @@
 										<hr>
 										<div class="text-center">
 											<a class="small" th:href="@{/toRegister}">创建账户</a>
+											<span th:text="${msg}" class="text-danger small" style="display: block;" th:if="${not #strings.isEmpty(msg)}"></span>
+											<span th:text="${error}" class="text-danger small" style="display: block;" th:if="${not #strings.isEmpty(error)}"></span>
 										</div>
 									</div>
 								</div>

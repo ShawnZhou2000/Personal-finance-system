@@ -11,6 +11,7 @@ import com.qlu.keshe.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -62,8 +63,8 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
-    public String login(@RequestParam("uname") String uname,
-                        @RequestParam("password") String password,
+    public String login(@RequestParam(value = "uname") String uname,
+                        @RequestParam(value = "password") String password,
                         Model model, HttpSession session) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("uname", uname);
@@ -111,5 +112,10 @@ public class LoginController {
         user.setWarn(warn);
         userService.updateById(user);
         return "redirect:/userInfo";
+    }
+
+    @GetMapping("/")
+    public String index() {
+        return "login";
     }
 }
